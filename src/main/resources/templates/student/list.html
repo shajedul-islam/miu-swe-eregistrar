@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>List of Students</title>
+    <!-- Link to the existing CSS file -->
+    <link th:href="@{/css/styles.css}" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1>List of Students</h1>
+
+<!-- Display students in an HTML table -->
+<table>
+    <thead>
+    <tr>
+        <th>Student Number</th>
+        <th>First Name</th>
+        <th>Middle Name</th>
+        <th>Last Name</th>
+        <th>CGPA</th>
+        <th>Enrollment Date</th>
+        <th>International</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Use Thymeleaf to iterate through the list of students -->
+    <tr th:each="student : ${students}">
+        <td th:text="${student.studentNumber}"></td>
+        <td th:text="${student.firstName}"></td>
+        <td th:text="${student.middleName}"></td>
+        <td th:text="${student.lastName}"></td>
+        <td th:text="${student.cgpa}"></td>
+        <td th:text="${student.enrollmentDate}"></td>
+        <td th:text="${student.isInternational ? 'Yes' : 'No'}"></td>
+        <td>
+            <a th:href="@{'/eregistrar/students/edit/' + ${student.studentId}}">Edit</a>
+            <a th:href="@{'/eregistrar/students/delete/' + ${student.studentId}}" onclick="return confirm('Are you sure you want to delete this student?')">Delete</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<!-- Add a link to the homepage or other navigation links as needed -->
+<a th:href="@{/eregistrar/home}">Back to Home</a>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Student</title>
+  <link th:href="@{/css/styles.css}" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container">
+  <h1>Edit Student</h1>
+  <form th:object="${student}" th:action="@{/eregistrar/students/edit/{id}(id=${id})}" method="post">
+    <input type="hidden" th:field="*{studentId}">
+    <div class="form-group">
+      <label for="studentNumber">Student Number:</label>
+      <input type="text" id="studentNumber" th:field="*{studentNumber}" required>
+    </div>
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" th:field="*{firstName}" required>
+    </div>
+    <div class="form-group">
+      <label for="middleName">Middle Name:</label>
+      <input type="text" id="middleName" th:field="*{middleName}">
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" th:field="*{lastName}" required>
+    </div>
+    <div class="form-group">
+      <label for="cgpa">CGPA:</label>
+      <input type="number" step="0.01" id="cgpa" th:field="*{cgpa}">
+    </div>
+    <div class="form-group">
+      <label for="enrollmentDate">Enrollment Date:</label>
+      <input type="date" id="enrollmentDate" th:field="*{enrollmentDate}" required>
+    </div>
+    <div class="form-group">
+      <label for="isInternational">International Student:</label><br>
+      <input type="radio" id="isInternational" name="isInternational" th:value="true" th:checked="${student.isInternational}"> Yes
+      <input type="radio" id="isInternational" name="isInternational" th:value="false" th:checked="${!student.isInternational}"> No
+    </div>
+    <div class="form-group">
+      <button type="submit">Save</button>
+      <a th:href="@{/eregistrar/students}" class="back-link">Back to List</a>
+    </div>
+  </form>
+</div>
+</body>
+</html>

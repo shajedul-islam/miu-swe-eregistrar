@@ -1,0 +1,257 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional styles for the list page */
+body {
+    background-color: #f0f0f0; /* Set the background color to match the home page */
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff; /* Add a white background to the table */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style the "Back to Home" link */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style the "Edit" and "Delete" links */
+a[href^="/eregistrar/students/"] {
+    margin-right: 10px;
+}
+
+/* Additional styles for the registration page */
+body {
+    background-color: #f0f0f0; /* Set the background color to match the home page */
+}
+
+h1 {
+    color: #333;
+    text-align: center; /* Center-align the heading */
+    margin-bottom: 20px; /* Add spacing below the heading */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Add spacing between form elements */
+}
+
+label {
+    display: block; /* Display labels in a block layout */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+    width: 100%; /* Make form inputs 100% width */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"] {
+    margin-right: 5px; /* Add spacing between radio buttons and labels */
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/*.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}*/
+
+/* Style the "Back to Home" link */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px; /* Add spacing above the link */
+}
+
+/* Style error messages if needed */
+.error-message {
+    color: #ff0000;
+    font-size: 14px;
+}
+
+/* Additional styles for the edit page */
+body {
+    background-color: #f0f0f0; /* Set the background color to match the home page */
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/*.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}*/
+
+/* Style the "Back to List" link */
+a.back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* Additional styles for the delete page */
+body {
+    background-color: #f0f0f0; /* Set the background color to match the home page */
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}*/
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style the "Delete" button and "Cancel" link */
+form {
+    text-align: center;
+}
+
+button {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #c82333;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a.back-link {
+    margin-top: 20px;
+    display: inline-block;
+}

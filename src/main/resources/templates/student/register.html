@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Register Student</title>
+  <!-- Link to the existing CSS file -->
+  <link th:href="@{/css/styles.css}" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1>Register Student</h1>
+
+<form th:action="@{/eregistrar/students/register}" method="post">
+  <div class="form-group">
+    <label for="studentNumber">Student Number:</label>
+    <input type="text" id="studentNumber" name="studentNumber" class="form-control" required>
+  </div>
+
+  <div class="form-group">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" class="form-control" required>
+  </div>
+
+  <div class="form-group">
+    <label for="middleName">Middle Name:</label>
+    <input type="text" id="middleName" name="middleName" class="form-control">
+  </div>
+
+  <div class="form-group">
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" class="form-control" required>
+  </div>
+
+  <div class="form-group">
+    <label for="cgpa">CGPA:</label>
+    <input type="number" step="0.01" id="cgpa" name="cgpa" class="form-control">
+  </div>
+
+  <div class="form-group">
+    <label for="enrollmentDate">Enrollment Date:</label>
+    <input type="date" id="enrollmentDate" name="enrollmentDate" class="form-control" required>
+  </div>
+
+  <div class="form-group">
+    <label>International:</label><br>
+    <input type="radio" id="internationalYes" name="isInternational" value="true" required>
+    <label for="internationalYes">Yes</label>
+    <input type="radio" id="internationalNo" name="isInternational" value="false" required>
+    <label for="internationalNo">No</label>
+  </div>
+
+  <div class="form-group">
+    <button type="submit" class="btn btn-primary">Register</button>
+  </div>
+</form>
+
+<!-- Add a link to the homepage or other navigation links as needed -->
+<a th:href="@{/eregistrar/home}">Back to Home</a>
+</body>
+</html>
