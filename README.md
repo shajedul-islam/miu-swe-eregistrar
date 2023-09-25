@@ -7,4 +7,4 @@
 - Register
 - Edit
 - Delete
-- Search
+- Extra Feature: Search by name
